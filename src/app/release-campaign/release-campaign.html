@@ -1,16 +1,45 @@
-<header>
-  <h3>
-    Seja o primeiro a adquirir <br />
-    <strong>e aprenda:</strong>
-  </h3>
-</header>
+<section class="release-section" id="release">
+  <header>
+    <h3>
+      Seja o primeiro a adquirir <br />
+      <strong>e aprenda:</strong>
+    </h3>
+  </header>
 
-<ul class="ebook-teachings">
-  @for (teaching of teachings; track teaching) {
-  <li>{{ teaching }}</li>
-  }
-</ul>
+  <ul class="ebook-teachings">
+    @for (teaching of teachings; track teaching) {
+    <li>{{ teaching }}</li>
+    }
+  </ul>
 
-<input type="text" placeholder="Seu melhor e-mail ou número de WhatsApp" />
+    <div class="form-container">
+      <input 
+        type="text" 
+        [formControl]="dataLead" 
+        [class.invalid]="dataLead.invalid && dataLead.touched"
+        placeholder="Seu melhor e-mail ou número de WhatsApp" />
+      
+      @if(dataLead.invalid && dataLead.touched) {
+        <div class="error-message" >
+          @if (dataLead.errors?.['required']) {
+            <p class="feedback feedback--error">Este campo é obrigatório</p>
+          } @else if (dataLead.errors?.['invalidFormat']) {
+            <p class="feedback feedback--error">Digite um email ou telefone válido</p>
+          }
+        </div>
+      }
 
-<button>Me avise do lançamento!</button>
+      @if (message === 'success') {
+        <p class="feedback feedback--success">Você está em nossa lista de espera!</p>
+      } @else if (message === 'error') {
+        <p class="feedback feedback--error">Não foi possível coletar seu e-mail/celular. Tente novamente!</p>
+      }
+
+      <button 
+        type="button" 
+        [disabled]="dataLead.invalid"
+        (click)="subscribeLead()">
+        Me avise do lançamento!
+      </button>
+    </div>
+</section>

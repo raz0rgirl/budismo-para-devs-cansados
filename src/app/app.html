@@ -1,14 +1,12 @@
 <main class="main">
-  <app-header></app-header>
-
   <section class="main__entry">
     <div class="container">
       <header class="entry__header">
-        <h1 class="header__title">30 dias em um monastério Budista</h1>
+        <h1 class="header__title">30 dias em um mosteiro Budista</h1>
 
         <p class="header__subtitle">
-          Transmutados em sabedoria e práticas para uma vida mais leve
-          no meio do caos da vida moderna. 
+          Compilado em práticas para uma vida mais leve
+          no meio de sprints caóticas. 
         </p>
       </header>
 
@@ -20,11 +18,11 @@
           />
         </figure>
 
-        <a class="button__launch" href="">Quero receber no lançamento</a>
+        <a class="button__launch" href="#release">Quero receber no lançamento</a>
 
         <div class="entry__pills">
-          <app-pill>347 devs na lista</app-pill>
-          <app-pill>Lançamento em 31 dias!</app-pill>
+          <app-pill>🔥 {{ totalLeads() }} devs na espera</app-pill>
+          <app-pill>🚀 Lançamento em {{ remainingDays() }} dias!</app-pill>
         </div>
       </div>
     </div>
@@ -37,11 +35,13 @@
       </header>
 
       <ul class="arguments__list">
-        <li class="list__item">Sofre de <strong>ansiedade e gastrite nervosa</strong> por conta do estresse do dia a dia no trabalho</li>
         <li class="list__item">
-          <strong>Sente</strong> que pode desenvolver <strong>burnout</strong> por <strong>esgotamento físico e mental</strong> 
+          👉 Sofre de <strong>ansiedade e gastrite nervosa</strong> por conta do estresse do dia a dia no trabalho</li>
+        <li class="list__item">
+          👉 <strong>Sente</strong> que pode desenvolver <strong>burnout</strong> por <strong>esgotamento físico e mental</strong> 
         </li>
-        <li class="list__item">Já teve ou frequentemente sofre da <strong>síndrome do impostor</strong></li>
+        <li class="list__item">
+          👉 Já teve ou frequentemente sofre da <strong>síndrome do impostor</strong></li>
       </ul>
 
       <header class="arguments__header">
@@ -49,17 +49,22 @@
       </header>
 
       <ul class="arguments__list">
-        <li class="list__item">Se concentrar em tarefas simples. <br> Exemplo: lançar horas, abrir um PR simples</li>
+        
         <li class="list__item">
-          Lidar com <strong>críticas</strong> e <strong>feedbacks negativos</strong> no trabalho
+          <span class="list__icon"></span>
+          👉 Se concentrar em tarefas simples.  Exemplo: lançar horas, abrir um PR</li>
+        <li class="list__item">
+          <span class="list__icon"></span>
+          👉 Lidar com <strong>críticas</strong> e <strong>feedbacks negativos</strong> no trabalho
         </li>
         <li class="list__item">
-          Sentir motivação para trabalhar em projetos pessoais ou aprender novas tecnologias
+          <span class="list__icon"></span>
+          👉 Sentir motivação para trabalhar em projetos pessoais ou aprender novas tecnologias
         </li>
       </ul>
 
       <footer class="arguments__footer">
-        <a class="button__launch" href="">Quero a minha paz</a>
+        <a class="button__launch" href="#release">Quero viver zen</a>
       </footer>
    </div>
   </section>
@@ -71,9 +76,18 @@
     </header>
 
     <app-chapters></app-chapters>
+  </section>
+
+
+  <section class="main__faq">
+    <app-faq></app-faq>
+  </section>
+
+  <section class="main__call-to-action">
     <app-release-campaign></app-release-campaign>
     <app-about-publisher></app-about-publisher>
   </section>
+
 
   <app-footer></app-footer>
 </main>

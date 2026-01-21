@@ -5,12 +5,44 @@
     --color-beige: #FFF0DD;
     --color-light-yellow: #FCE5C6;
     --color-yellow: #FAA127;
-    --color-brown: #B26700;
+    --color-brown: #985737;
     
 }
 
-html,body {
-    font-family: "Share Tech Mono", monospace;
-
+html {
+    scroll-behavior: smooth;
 }
 
+html, body {
+    font-family: "Share Tech Mono", monospace;
+}
+
+@media (max-width: 768px) {
+    
+    .main__entry {
+        padding: 1rem 0;
+        flex-direction: column;
+        justify-content: center;
+        min-height: max-content;
+
+        img {
+            max-width: 100%;
+        }
+
+         .entry__header {
+            margin-bottom: 1rem;
+        }
+
+        .entry__header {
+            margin-bottom: 0;
+            padding: 1rem;
+        }
+    }
+
+    .main__arguments {
+        .arguments__list {
+            padding-left: 0;
+        }
+
+    }
+}

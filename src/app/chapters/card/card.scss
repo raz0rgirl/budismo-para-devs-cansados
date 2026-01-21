@@ -1,9 +1,8 @@
 .chapter {
-    width: 400px;
-    min-height: 300px;
-    padding: 1rem;
+    width: 500px;
+    height: 385px;
+    padding: 2rem;
     border-radius: 20px;
-    margin-right: 2em;
     text-align: center;
     background-color: #FFE0B6;
     box-sizing: border-box;
@@ -22,12 +21,18 @@
 
 
     .chapter__title {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         color: var(--color-brown);
     }
 
     .chapter__description {
         font-weight: 400;
+        font-size: 1.2rem;
         color: var(--color-brown);
+    }
+
+    @media (min-width: 768px) {
+        margin-bottom: 2rem;
+        margin-right: 2.5rem;
     }
 }

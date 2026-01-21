@@ -10,28 +10,40 @@ import { Card } from './card/card';
 export class Chapters {
   protected readonly chapters = [
     {
-      icon: '📘',
-      title: 'Introduction to Angular',
+      icon: '✨',
+      title: 'Instanciando o Buda dentro de você',
       description:
-        'Learn the basics of Angular, including components, modules, and services.',
+        'Descubra como Siddhartha Gautama, um homem comum, se tornou o Buda e como isso pode despertar a nossa natureza iluminada.',
     },
     {
-      icon: '📗',
-      title: 'Advanced Angular Concepts',
+      icon: '👁️',
+      title: 'Libertando-se da ilusão',
       description:
-        'Dive deeper into Angular with topics like dependency injection, routing, and state management.',
+        'Entenda a natureza do sofrimento e como transcender as ilusões da mente, entendendo seu próprio código interno.',
     },
     {
-      icon: '📙',
-      title: 'Building Real-World Applications',
+      icon: '🧠',
+      title: 'Desenvolvendo uma disciplina búdica',
       description:
-        'Apply your knowledge by building a complete Angular application from scratch.',
+        'Conheça práticas monásticas que nos ajudam a cultivar a disciplina mental e emocional.',
     },
     {
-      icon: '📕',
-      title: 'Testing and Deployment',
+      icon: '🌊',
+      title: 'Se tornando um líder zen',
       description:
-        'Learn how to test your Angular applications and deploy them to production.',
+        'Como renunciar seu ego pode te transformar num líder e como isso impacta positivamente sua vida pessoal e profissional.',
+    },
+    {
+      icon: '🧘‍♀️',
+      title: 'Meditação para Desenvolvedores Cansados',
+      description:
+        'Aprenda técnicas de meditação que ajudam a viver o momento presente e reduzir o estresse diário.',
+    },
+     {
+      icon: '🌱',
+      title: 'Plantando Boas Sementes',
+      description:
+        'Descubra novas maneiras de contribuir com a comunidade e o mundo ao seu redor, espalhando boas ações por onde passar.',
     },
   ];
 }

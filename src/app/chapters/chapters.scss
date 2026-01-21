@@ -1,5 +1,74 @@
 .container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+
+        app-card {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.main__chapters {
+    background-color: var(--color-brown);
+    padding: 2rem 0;
+    height: 100vh;
+    color: #fff;
+
+
+    .chapters__header {
+        text-align: center;
+
+        .header__title {
+            color: var(--color-light-yellow);
+            font-size: 4rem;
+            font-weight: 500;;
+            font-family: "Staatliches", cursive;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .header__subtitle {
+            font-weight: 400;
+            margin: 0;
+            color: var(--color-yellow);
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+    }
+
+    .chapters__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+
+        .chapter {
+            background-color: var(--color-light-yellow);
+            color: var(--color-brown);
+            border-radius: 16px;
+            padding: 1rem 2rem;
+            margin-bottom: 2rem;
+            width: 60%;
+
+            h4 {
+                font-family: "Staatliches", cursive;
+                font-size: 2rem;
+                margin: 0;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 1.3rem;
+                line-height: 1.5;
+                margin-top: 1rem;
+                font-weight: 600;
+            }
+        }
+    }
 }

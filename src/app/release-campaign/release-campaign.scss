@@ -1,20 +1,23 @@
 :host {
-    background-color: #edaf3fd9;
+    background-color: #e9946b;
     color: #fff;
-    margin-top: 10rem;
+    padding: 2rem;
     display: inline-block;
-    padding: 1rem 3rem 4rem 5rem;
     border-radius: 60px;
-    left: -115px;
-    max-width: 550px;
     position: relative;
     border: 2px solid #fff;
+    max-width: 100%;
+
+    @media (min-width: 768px) {
+        margin-left: 3rem;
+        width: 580px;
+    } 
 }
 
 h3 {
     font-family: "Staatliches", cursive;
     font-size: 2.5rem;
-        font-weight: 400;
+    font-weight: 400;
 
 
     strong {
@@ -28,10 +31,11 @@ h3 {
 .ebook-teachings {
     list-style: none;
     padding: 0;
+    margin-bottom: 3rem;
     list-style-position: outside;
 
     li {
-        color: var(--color-brown);
+        color: var(--color-light-yellow);
         font-weight: 600;
         font-size: 1.3rem;
     }
@@ -43,14 +47,14 @@ input {
     border-radius: 16px;
     box-sizing: border-box;
     font-size: 1.3rem;
-  color: #DCDCDC;
-  border: 1px solid #cac7c7;
+    color: #DCDCDC;
+    border: 1px solid #cac7c7;
 
-  padding: 1rem;
-  width: 100%;
-  background-color: #fff;
-  border: 1px solid #D5D5D5;
-  text-transform: uppercase;
+    padding: 1rem;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #D5D5D5;
+    text-transform: uppercase;
 
     &::placeholder {
         color: #DCDCDC;
@@ -67,6 +71,7 @@ button  {
     margin-top: 1.5rem;
     border-radius: 16px;
     width: 100%;
+    cursor: pointer;
     display: inline-block;
     background-image: linear-gradient(90deg, #36922E 0%, #44AD3A 100%);
     border: 1px solid #0D7C02;
@@ -80,3 +85,21 @@ button  {
     font-family: "Staatliches";
     letter-spacing: 1px;
 }
+
+.feedback {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 8px;
+
+    &.feedback--success {
+        color: #35922c;
+        background-color: #d9ffd5;
+    }
+
+    &.feedback--error {
+        color: #e02323;
+        background-color: #ffd0d0;
+    }
+}
+

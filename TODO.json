@@ -1,0 +1,47 @@
+{
+  "todo": [],
+  "completed": [
+    {
+      "id": 14099,
+      "text": "Integrar formulário com planilha",
+      "priority": 1,
+      "created": "2025-09-14T19:48:48.716Z"
+    },
+    {
+      "id": 16973,
+      "text": "Desenvolvedor contador de devs na lista",
+      "priority": 2,
+      "created": "2025-09-14T19:50:53.302Z"
+    },
+    {
+      "id": 14144,
+      "text": "Desenvolver contador de lançamento",
+      "priority": 2,
+      "created": "2025-09-14T19:50:51.293Z"
+    },
+    {
+      "id": 16257,
+      "text": "Adicionar ancora no botão inicial para formulário",
+      "priority": 1,
+      "created": "2025-09-14T19:50:25.629Z"
+    },
+    {
+      "id": 10419,
+      "text": "Adicionar animação",
+      "priority": 3,
+      "created": "2025-09-14T19:50:55.681Z"
+    },
+    {
+      "id": 17411,
+      "text": "Adicionar texto sobre",
+      "priority": 1,
+      "created": "2025-09-14T19:48:55.508Z"
+    },
+    {
+      "id": 11850,
+      "text": "Colocar títulos dos capítulos do livro",
+      "priority": 1,
+      "created": "2025-10-23T14:27:16.741Z"
+    }
+  ]
+}
