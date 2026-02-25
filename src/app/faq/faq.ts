@@ -35,18 +35,8 @@ export class Faq {
       open: false
     },
     {
-      question: '👉 O ebook terá algum custo?',
-      answer: 'Sim, o ebook será vendido por um preço acessível de 17,90 para cobrir os custos de produção e distribuição. No entanto, acreditamos que o valor do conteúdo oferecido é imensurável para o espírito.',
-      open: false
-    },
-    {
-      question: '👉 Como posso adquirir o ebook com desconto?',
-      answer: 'O desconto especial de pré-venda estará disponível apenas para os inscritos na lista de espera.',
-      open: false
-    },
-    {
       question: '👉 Existe alguma maneira de adquirir o ebook gratuitamente?',
-      answer: 'Sim! Para aqueles que doarem para alguma instituição de caridade ou projeto social. Após a doação, envie o comprovante para nosso e-mail e você receberá um link para baixar o ebook gratuitamente.',
+      answer: 'Sim! Para aqueles que possuem assinatura no Kindle unlimited o livro estará disponível gratuitamente.',
     }
   ];
 
