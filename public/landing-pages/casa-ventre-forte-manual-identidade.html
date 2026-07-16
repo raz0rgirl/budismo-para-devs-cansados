@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa Ventre Forte — Manual de Identidade Visual</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --preto:#0a0608;
+  --vinho-3:#26041a;
+  --vinho-2:#3a0620;
+  --vinho:#5f092b;
+  --ouro:#d8b35d;
+  --ouro-2:#f0c45a;
+  --ouro-soft:#b8924a;
+  --creme:#f3ead9;
+  --creme-2:#e7dac0;
+  --ambar:#e8a13c;
+  --noite:#060e24;
+  --noite-2:#241452;
+  --magenta:#e83a8c;
+  --azul:#15265e;
+  --gap:48px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--preto);
+  color:var(--creme);
+  font-family:'EB Garamond',Georgia,serif;
+  font-size:17px;
+  line-height:1.6;
+}
+
+/* ──────── LAYOUT ──────── */
+.page{max-width:860px;margin:0 auto;padding:0 28px 100px}
+
+/* ──────── COVER ──────── */
+.cover{
+  min-height:100vh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;
+  background:radial-gradient(ellipse 80% 60% at 50% 30%,#3a0620,#0a0608 72%);
+  padding:60px 28px;
+  position:relative;
+}
+.cover::after{
+  content:"";position:absolute;inset:50px;
+  border:1.5px solid rgba(216,179,93,.4);pointer-events:none;
+}
+.cover::before{
+  content:"";position:absolute;
+  top:42px;left:42px;right:42px;bottom:42px;
+  border:1px solid rgba(216,179,93,.15);pointer-events:none;
+}
+.cover-eye{font-size:12px;letter-spacing:.5em;text-transform:uppercase;color:var(--ouro-soft);margin-bottom:18px}
+.cover h1{font-family:'Cinzel Decorative';font-weight:900;font-size:clamp(28px,5vw,52px);color:var(--ouro);line-height:1.05;margin-bottom:12px;text-shadow:0 2px 30px rgba(216,179,93,.2)}
+.cover h2{font-family:'Cinzel Decorative';font-weight:700;font-size:clamp(16px,2.5vw,24px);color:var(--creme-2);letter-spacing:.04em;margin-bottom:28px}
+.cover-div{display:flex;align-items:center;gap:16px;width:280px;margin:0 auto 28px}
+.cover-div i{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--ouro),transparent)}
+.cover-div b{width:9px;height:9px;background:var(--ouro);transform:rotate(45deg);display:block}
+.cover p{font-style:italic;color:#cbb9a8;font-size:18px;max-width:480px}
+
+/* ──────── SECTION ──────── */
+.section{padding:72px 0 0}
+.sec-tag{font-size:11px;letter-spacing:.5em;text-transform:uppercase;color:var(--ouro-soft);margin-bottom:14px;display:flex;align-items:center;gap:12px}
+.sec-tag::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,rgba(216,179,93,.35),transparent)}
+.sec-h{font-family:'Cinzel Decorative';font-weight:700;font-size:clamp(22px,3.5vw,32px);color:var(--ouro);margin-bottom:8px}
+.sec-sub{font-style:italic;color:#cbb9a8;font-size:17px;margin-bottom:36px}
+
+/* ──────── TYPOGRAPHY SPECIMENS ──────── */
+.type-stack{display:flex;flex-direction:column;gap:32px}
+.type-card{background:linear-gradient(135deg,rgba(95,9,43,.12),rgba(10,6,8,.4));border:1px solid rgba(216,179,93,.2);border-radius:4px;padding:28px 32px}
+.type-card .tc-meta{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px;gap:12px;flex-wrap:wrap}
+.tc-name{font-size:12px;letter-spacing:.35em;text-transform:uppercase;color:var(--ouro-soft)}
+.tc-canva{background:rgba(216,179,93,.1);border:1px solid rgba(216,179,93,.3);border-radius:2px;padding:4px 10px;font-size:12px;color:var(--ouro);letter-spacing:.04em}
+.tc-sample{margin-bottom:16px}
+.tc-detail{display:flex;flex-wrap:wrap;gap:10px 24px}
+.td{font-size:13px;color:#a99080}
+.td b{color:var(--creme-2);font-weight:400}
+
+/* specimen rows */
+.sp-cinzel-hero{font-family:'Cinzel Decorative';font-weight:900;font-size:52px;color:var(--ouro-2);line-height:1.05}
+.sp-cinzel-title{font-family:'Cinzel Decorative';font-weight:700;font-size:34px;color:var(--creme);line-height:1.1}
+.sp-cinzel-sub{font-family:'Cinzel Decorative';font-weight:700;font-size:22px;color:var(--ouro);letter-spacing:.04em}
+.sp-eb-body{font-family:'EB Garamond';font-size:19px;color:var(--creme-2);line-height:1.55}
+.sp-eb-italic{font-family:'EB Garamond';font-style:italic;font-size:22px;color:var(--creme-2)}
+.sp-eb-eye{font-family:'EB Garamond';font-weight:600;text-transform:uppercase;letter-spacing:.44em;font-size:14px;color:var(--ouro-soft)}
+.sp-eb-lbl{font-family:'EB Garamond';font-weight:600;text-transform:uppercase;letter-spacing:.3em;font-size:13px;color:var(--ouro-soft)}
+
+/* ──────── TYPE SCALE TABLE ──────── */
+.type-scale{width:100%;border-collapse:collapse;margin-top:8px}
+.type-scale th{text-align:left;font-family:'EB Garamond';font-weight:600;text-transform:uppercase;letter-spacing:.3em;font-size:12px;color:var(--ouro-soft);padding:10px 14px;border-bottom:1px solid rgba(216,179,93,.25)}
+.type-scale td{padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.05);font-size:15px;color:#cbb9a8;vertical-align:middle}
+.type-scale td:first-child{color:var(--creme);font-weight:500}
+.type-scale .sz{font-family:'Cinzel Decorative';color:var(--ouro);font-size:14px}
+.type-scale tr:last-child td{border-bottom:none}
+
+/* ──────── COLOR PALETTE ──────── */
+.pal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px;margin-bottom:32px}
+.swatch{border-radius:4px;overflow:hidden;border:1px solid rgba(255,255,255,.07)}
+.sw-color{height:80px;position:relative;display:flex;align-items:flex-end;padding:8px 12px}
+.sw-hex{font-family:'EB Garamond';font-size:14px;font-weight:600;letter-spacing:.06em}
+.sw-body{padding:12px 14px;background:rgba(255,255,255,.04)}
+.sw-name{font-family:'Cinzel Decorative';font-weight:700;font-size:12px;color:var(--creme);margin-bottom:3px;letter-spacing:.04em}
+.sw-use{font-size:12px;color:#a99080;font-style:italic;line-height:1.4}
+.pal-title{font-family:'Cinzel Decorative';font-weight:700;color:var(--ouro);font-size:17px;margin:28px 0 14px;display:flex;align-items:center;gap:12px}
+.pal-title::after{content:"";flex:1;height:1px;background:rgba(216,179,93,.25)}
+
+/* ──────── BACKGROUNDS GUIDE ──────── */
+.bg-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:28px}
+.bg-card{border-radius:4px;overflow:hidden;border:1px solid rgba(216,179,93,.18)}
+.bg-preview{height:160px;display:flex;align-items:center;justify-content:center}
+.bg-vinho{background:radial-gradient(ellipse 80% 80% at 50% 30%,#3a0620,#0a0608 78%)}
+.bg-vinho-flat{background:linear-gradient(180deg,#0a0608,#26041a 55%,#0a0608)}
+.bg-noturno{background:radial-gradient(ellipse 80% 80% at 50% 30%,#241452,#04060f 78%)}
+.bg-noturno-flat{background:linear-gradient(180deg,#04060f,#0a1130 55%,#04060f)}
+.bg-ember{background:radial-gradient(circle at 50% 42%,rgba(232,161,60,.25),transparent 70%),radial-gradient(ellipse 80% 80% at 50% 30%,#3a0620,#0a0608 78%)}
+.bg-scrim{background:linear-gradient(180deg,rgba(10,6,8,.2),rgba(38,4,26,.85) 75%,#0a0608)}
+.bg-label{font-family:'EB Garamond';font-size:14px;color:var(--ouro);text-align:center;letter-spacing:.04em}
+.bg-body{padding:14px 16px;background:rgba(0,0,0,.25)}
+.bg-body p{font-size:13.5px;color:#cbb9a8;line-height:1.5;margin-bottom:6px}
+.bg-body code{font-family:monospace;font-size:12px;color:var(--ouro-2);background:rgba(216,179,93,.08);padding:2px 6px;border-radius:2px}
+.step-list{display:flex;flex-direction:column;gap:14px;margin-top:10px}
+.step{display:flex;gap:14px;align-items:flex-start}
+.step-n{width:26px;height:26px;border-radius:50%;background:var(--ouro);color:#0a0608;font-family:'Cinzel Decorative';font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;flex:none;margin-top:1px}
+.step p{font-size:14.5px;color:#cbb9a8;line-height:1.5}
+.step p b{color:var(--creme)}
+.step p code{font-family:monospace;font-size:12px;color:var(--ouro-2);background:rgba(216,179,93,.08);padding:2px 6px;border-radius:2px}
+
+/* ──────── GRAMMAR RULES ──────── */
+.grammar-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.gram-card{background:rgba(95,9,43,.08);border:1px solid rgba(216,179,93,.18);border-radius:4px;padding:22px 24px}
+.gram-card h4{font-family:'Cinzel Decorative';font-weight:700;color:var(--ouro);font-size:14px;margin-bottom:12px;letter-spacing:.04em}
+.gram-card p,.gram-card li{font-size:14.5px;color:#cbb9a8;line-height:1.55}
+.gram-card ul{padding-left:0;list-style:none;display:flex;flex-direction:column;gap:7px}
+.gram-card li::before{content:"✦ ";color:var(--ouro);font-size:11px}
+/* moldura demo */
+.moldura-demo{position:relative;height:100px;margin:14px 0;border:1.5px solid rgba(216,179,93,.5);background:rgba(0,0,0,.2)}
+.md-corner{position:absolute;width:14px;height:14px;border:1.5px solid var(--ouro)}
+.md-c1{top:-1px;left:-1px;border-right:none;border-bottom:none}
+.md-c2{top:-1px;right:-1px;border-left:none;border-bottom:none}
+.md-c3{bottom:-1px;left:-1px;border-right:none;border-top:none}
+.md-c4{bottom:-1px;right:-1px;border-left:none;border-top:none}
+/* divider demo */
+.div-demo{display:flex;align-items:center;gap:10px;margin:14px 0}
+.div-demo i{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--ouro),transparent)}
+.div-demo b{width:9px;height:9px;background:var(--ouro);transform:rotate(45deg);display:block}
+
+/* ──────── DUOTONE GUIDE ──────── */
+.duo-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:20px}
+.duo-card{border-radius:4px;overflow:hidden;border:1px solid rgba(216,179,93,.18)}
+.duo-bar{height:50px;display:flex}
+.duo-seg{flex:1}
+.duo-label{padding:10px 12px;font-size:12.5px;color:#cbb9a8;font-style:italic;background:rgba(0,0,0,.3)}
+.duo-label b{display:block;color:var(--ouro);font-style:normal;font-family:'EB Garamond';font-weight:600;font-size:13px;margin-bottom:2px}
+
+/* ──────── HIERARCHY DEMO ──────── */
+.hier-demo{background:radial-gradient(ellipse 80% 70% at 50% 30%,#3a0620,#0a0608 78%);border:1.5px solid rgba(216,179,93,.35);border-radius:4px;padding:40px 36px;text-align:center;position:relative;margin-top:4px}
+.hier-demo::after{content:"";position:absolute;inset:34px;border:1px solid rgba(216,179,93,.25);pointer-events:none}
+.hd-eye{font-family:'EB Garamond';font-weight:600;text-transform:uppercase;letter-spacing:.44em;font-size:12px;color:var(--ouro-soft);margin-bottom:10px}
+.hd-title{font-family:'Cinzel Decorative';font-weight:900;font-size:34px;color:var(--ouro-2);line-height:1.05;margin-bottom:6px}
+.hd-sub{font-family:'EB Garamond';font-style:italic;font-size:22px;color:var(--creme-2);margin-bottom:16px}
+.hd-div{display:flex;align-items:center;gap:12px;width:200px;margin:0 auto 16px}
+.hd-div i{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--ouro),transparent)}
+.hd-div b{width:7px;height:7px;background:var(--ouro);transform:rotate(45deg);display:block}
+.hd-info{font-family:'Cinzel Decorative';font-weight:700;font-size:18px;color:var(--ouro);margin-bottom:4px}
+.hd-body{font-size:16px;color:#cbb9a8;font-style:italic}
+.hd-lbl{font-family:'EB Garamond';font-weight:600;text-transform:uppercase;letter-spacing:.3em;font-size:11px;color:var(--ouro-soft);margin-top:16px}
+.arrow-labels{margin-top:16px;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;text-align:left;max-width:380px;margin-left:auto;margin-right:auto}
+.al-tag{font-family:'EB Garamond';font-weight:600;font-size:12.5px;color:var(--ouro);text-transform:uppercase;letter-spacing:.25em;white-space:nowrap}
+.al-desc{font-size:13px;color:#a99080}
+
+/* ──────── DO / DONT ──────── */
+.dd-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.dd-card{border-radius:4px;padding:20px 22px}
+.dd-do{background:rgba(95,9,43,.12);border:1px solid rgba(216,179,93,.3)}
+.dd-dont{background:rgba(40,40,40,.18);border:1px solid rgba(255,255,255,.1)}
+.dd-card h4{font-family:'Cinzel Decorative';font-weight:700;font-size:14px;margin-bottom:12px}
+.dd-do h4{color:var(--ouro)}
+.dd-dont h4{color:#888}
+.dd-card ul{padding-left:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.dd-card li{font-size:14px;line-height:1.45;padding-left:18px;position:relative}
+.dd-do li{color:#cbb9a8}
+.dd-dont li{color:#888}
+.dd-do li::before{content:"✓";position:absolute;left:0;color:var(--ouro-2)}
+.dd-dont li::before{content:"✗";position:absolute;left:0;color:#666}
+
+/* ──────── CANVA TIPS ──────── */
+.tip-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.tip-card{background:rgba(216,179,93,.04);border:1px solid rgba(216,179,93,.2);border-radius:4px;padding:20px 22px}
+.tip-card h4{font-family:'Cinzel Decorative';font-weight:700;color:var(--ouro);font-size:13px;letter-spacing:.06em;margin-bottom:10px}
+.tip-card p,.tip-card li{font-size:13.5px;color:#cbb9a8;line-height:1.5}
+.tip-card ul{padding-left:0;list-style:none;display:flex;flex-direction:column;gap:6px}
+.tip-card li::before{content:"→ ";color:var(--ouro-soft)}
+.tip-card code{font-family:monospace;font-size:11.5px;color:var(--ouro-2);background:rgba(216,179,93,.08);padding:1px 5px;border-radius:2px}
+
+/* ──────── FOOTER ──────── */
+.doc-footer{text-align:center;padding:60px 0 20px;border-top:1px solid rgba(216,179,93,.2);margin-top:60px;color:#7a6a58;font-size:13.5px;font-style:italic}
+.doc-footer b{font-family:'Cinzel Decorative';font-style:normal;color:var(--ouro);font-weight:700}
+
+/* responsive */
+@media(max-width:600px){
+  .bg-grid,.grammar-grid,.duo-grid,.dd-grid,.tip-grid{grid-template-columns:1fr}
+  .type-scale td,.type-scale th{padding:8px 8px}
+  .sp-cinzel-hero{font-size:34px}
+}
+@media print{
+  body{background:#f8f4ee;color:#1a0a10}
+  .cover{background:#e8dcc8;min-height:auto;padding:40px 28px}
+  .cover h1,.sec-h,.gram-card h4,.tip-card h4{color:#5f092b}
+}
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-eye">Identidade Visual</div>
+  <h1>Casa Ventre Forte</h1>
+  <h2>Manual para Criadores de Conteúdo</h2>
+  <div class="cover-div"><i></i><b></b><i></i></div>
+  <p>Fontes · Hexadecimais · Efeitos de fundo · Gramática visual<br>Guia de uso para Canva e ferramentas digitais</p>
+</div>
+
+<div class="page">
+
+  <!-- ════ TIPOGRAFIA ════ -->
+  <section class="section">
+    <div class="sec-tag">01 &nbsp; Tipografia</div>
+    <h2 class="sec-h">As Duas Fontes da Casa</h2>
+    <p class="sec-sub">Toda peça usa exatamente este par — nunca fonts diferentes.</p>
+
+    <div class="type-stack">
+
+      <div class="type-card">
+        <div class="tc-meta">
+          <div>
+            <div class="tc-name">Display · Títulos · Selos</div>
+            <div style="margin-top:6px;font-size:13px;color:#888">Papel: títulos, subtítulos, siglas, rótulos de seção, texto em arco</div>
+          </div>
+          <div class="tc-canva">Canva: "Cinzel Decorative"</div>
+        </div>
+        <div class="tc-sample">
+          <div class="sp-cinzel-hero">Casa Ventre Forte</div>
+          <div class="sp-cinzel-sub" style="margin-top:8px">Escola de Bruxaria</div>
+        </div>
+        <div class="tc-detail">
+          <span class="td">Família: <b>Cinzel Decorative</b></span>
+          <span class="td">Pesos usados: <b>Bold (700) · Black (900)</b></span>
+          <span class="td">Sempre em maiúsculas</span>
+          <span class="td">Espaçamento: <b>padrão → amplo</b></span>
+          <span class="td">No Canva: buscar <b>"Cinzel Decorative"</b></span>
+        </div>
+      </div>
+
+      <div class="type-card">
+        <div class="tc-meta">
+          <div>
+            <div class="tc-name">Corpo · Eyebrows · Datas · Labels</div>
+            <div style="margin-top:6px;font-size:13px;color:#888">Papel: texto corrido, rótulos, citações, legendas, datas</div>
+          </div>
+          <div class="tc-canva">Canva: "EB Garamond"</div>
+        </div>
+        <div class="tc-sample">
+          <div class="sp-eb-eye" style="margin-bottom:10px">Encontro Ritual · São Paulo</div>
+          <div class="sp-eb-italic">"a magia não se lê — se dança"</div>
+          <div class="sp-eb-body" style="margin-top:10px">O ventre é o caldeirão. Um encontro para despertar o corpo que reza dançando — movimento, respiração e ritmo como portais.</div>
+        </div>
+        <div class="tc-detail">
+          <span class="td">Família: <b>EB Garamond</b></span>
+          <span class="td">Pesos: <b>Regular · SemiBold · Italic</b></span>
+          <span class="td">Labels: <b>maiúsculo + espaçamento amplo</b></span>
+          <span class="td">Citações: <b>itálico</b></span>
+          <span class="td">No Canva: buscar <b>"EB Garamond"</b></span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- scale table -->
+    <h3 style="font-family:'Cinzel Decorative';color:var(--ouro);font-size:16px;margin:36px 0 14px;font-weight:700">Escala de Tamanhos (referência para A4/posts)</h3>
+    <table class="type-scale">
+      <thead><tr>
+        <th>Elemento</th><th>Fonte</th><th>Peso</th><th>Tamanho · post</th><th>Tamanho · A4</th><th>Cor</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>Eyebrow / label</td><td>EB Garamond</td><td>SemiBold</td><td class="sz">14–18px</td><td class="sz">20–24pt</td><td>Ouro suave</td></tr>
+        <tr><td>Título principal</td><td>Cinzel Decorative</td><td>Black</td><td class="sz">72–96px</td><td class="sz">48–64pt</td><td>Ouro brilhante</td></tr>
+        <tr><td>Subtítulo</td><td>EB Garamond</td><td>Italic</td><td class="sz">38–52px</td><td class="sz">28–38pt</td><td>Creme</td></tr>
+        <tr><td>Data / destaque</td><td>Cinzel Decorative</td><td>Bold</td><td class="sz">56–70px</td><td class="sz">36–48pt</td><td>Ouro</td></tr>
+        <tr><td>Corpo de texto</td><td>EB Garamond</td><td>Regular</td><td class="sz">28–34px</td><td class="sz">12–14pt</td><td>Creme-2</td></tr>
+        <tr><td>Nota / rodapé</td><td>EB Garamond</td><td>Italic</td><td class="sz">22–26px</td><td class="sz">10–11pt</td><td>Creme acinzentado</td></tr>
+        <tr><td>Assinatura / IG</td><td>Cinzel Decorative</td><td>Bold</td><td class="sz">28–36px</td><td class="sz">18–22pt</td><td>Ouro</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ════ CORES ════ -->
+  <section class="section">
+    <div class="sec-tag">02 &nbsp; Paleta de Cores</div>
+    <h2 class="sec-h">Os Hexadecimais da Casa</h2>
+    <p class="sec-sub">Duas peles, um sistema. Os fundos mudam — o ouro e o creme nunca.</p>
+
+    <div class="pal-title">Pele Vinho — a brasa do altar</div>
+    <div class="pal-grid">
+      <div class="swatch">
+        <div class="sw-color" style="background:#0a0608"><span class="sw-hex" style="color:#555">#0A0608</span></div>
+        <div class="sw-body"><div class="sw-name">Preto Base</div><div class="sw-use">Fundo principal · seções escuras</div></div>
+      </div>
+      <div class="swatch">
+        <div class="sw-color" style="background:#26041a"><span class="sw-hex" style="color:#6a3a5a">#26041A</span></div>
+        <div class="sw-body"><div class="sw-name">Vinho Profundo</div><div class="sw-use">Fundo hero · gradiente centro</div></div>
+      </div>
+      <div class="swatch">
+        <div class="sw-color" style="background:#3a0620"><span class="sw-hex" style="color:#8a4060">#3A0620</span></div>
+        <div class="sw-body"><div class="sw-name">Vinho Médio</div><div class="sw-use">Radial gradient · blocos</div></div>
+      </div>
+      <div class="swatch">
+        <div class="sw-color" style="background:#5f092b"><span class="sw-hex" style="color:#c06090">#5F092B</span></div>
+        <div class="sw-body"><div class="sw-name">Vinho Principal</div><div class="sw-use">Marca-d'água · acentos</div></div>
+      </div>
+      <div class="swatch">
+        <div class="sw-color" style="background:#d8b35d"><span class="sw-hex" style="color:#2a1800">#D8B35D</span></div>
+        <div class="sw-body"><div class="sw-name">Ouro Principal</div><div class="sw-use">Moldura · sigilo · bordas</div></div>
+      </div>
+      <div class="swatch">
+        <div class="sw-color" style="background:#f0c45a"><span class="sw-hex" style="color:#2a1800">#F0C45A</span></div>
+        <div class="sw-body"><div class="sw-name">Ouro Brilhante</div><div class="sw-use">Títulos em destaque · datas</div></div>
+      </div>
+      <div class="swatch">
+        <div class="sw-color" style="background:#b8924a"><span class="sw-hex" style="color:#1a0c00">#B8924A</span></div>
+        <div class="sw-body"><div class="sw-name">Ouro Suave</div><div class="sw-use">Eyebrows · labels · legendas</div></div>
+      </div>
+      <div class="swatch">
+        <div class="sw-color" style="background:#e8a13c"><span class="sw-hex" style="color:#1a0800">#E8A13C</span></div>
+        <div class="sw-body"><div class="sw-name">Âmbar / Brasa</div><div class="sw-use">Glow de fogo · calor central</div></div>
+      </div>
+      <div class="swatch">
+        <div class="sw-color" style="background:#f3ead9"><span class="sw-hex" style="color:#3a2010">#F3EAD9</span></div>
+        <div class="sw-body"><div class="sw-name">Creme</div><div class="sw-use">Texto principal do corpo</div></div>
+      </div>
+      <div class="swatch">
+        <div class="sw-color" style="background:#e7dac0"><span class="sw-hex" style="color:#3a2010">#E7DAC0</span></div>
+        <div class="sw-body"><div class="sw-name">Creme Escuro</div><div class="sw-use">Textos secundários · notas</div></div>
+      </div>
+    </div>
+
+    <div class="pal-title">Pele Noturna — o véu cósmico</div>
+    <div class="pal-grid">
+      <div class="swatch">
+        <div class="sw-color" style="background:#04060f"><span class="sw-hex" style="color:#444">#04060F</span></div>
+        <div class="sw-body"><div class="sw-name">Noite Base</div><div class="sw-use">Fundo principal noturno</div></div>
+      </div>
+      <div class="swatch">
+        <div class="sw-color" style="background:#0a1130"><span class="sw-hex" style="color:#4a5580">#0A1130</span></div>
+        <div class="sw-body"><div class="sw-name">Noite Profunda</div><div class="sw-use">Gradiente hero noturno</div></div>
+      </div>
+      <div class="swatch">
+        <div class="sw-color" style="background:#241452"><span class="sw-hex" style="color:#9080d0">#241452</span></div>
+        <div class="sw-body"><div class="sw-name">Azul-Noite</div><div class="sw-use">Centro radial · blocos</div></div>
+      </div>
+      <div class="swatch">
+        <div class="sw-color" style="background:#a01857"><span class="sw-hex" style="color:#f0a0d0">#A01857</span></div>
+        <div class="sw-body"><div class="sw-name">Vinho Frio</div><div class="sw-use">Acentos noturno</div></div>
+      </div>
+      <div class="swatch">
+        <div class="sw-color" style="background:#e83a8c"><span class="sw-hex" style="color:#fff">#E83A8C</span></div>
+        <div class="sw-body"><div class="sw-name">Magenta</div><div class="sw-use">Eyebrows · destaques noturno</div></div>
+      </div>
+    </div>
+    <p style="font-style:italic;color:#a99080;font-size:14px">★ &nbsp;Ouro, Ouro Brilhante, Ouro Suave e Creme são iguais nas duas peles — nunca mudam.</p>
+  </section>
+
+  <!-- ════ FUNDOS ════ -->
+  <section class="section">
+    <div class="sec-tag">03 &nbsp; Efeitos de Fundo</div>
+    <h2 class="sec-h">Como Recriar no Canva</h2>
+    <p class="sec-sub">Cada fundo é uma camada de gradiente sobre outra. No Canva, use retângulos com transparência empilhados.</p>
+
+    <div class="bg-grid">
+      <div class="bg-card">
+        <div class="bg-preview bg-vinho"><span style="font-family:'Cinzel Decorative';color:rgba(216,179,93,.6);font-size:14px">Vinho Radial</span></div>
+        <div class="bg-body">
+          <b class="bg-label">Fundo Vinho Principal</b>
+          <p style="margin-top:8px">Retângulo preto + retângulo central vinho com gradiente radial.</p>
+          <p>Canva: Elemento → Formas → Retângulo → Gradiente radial</p>
+          <p>Centro: <code>#3A0620</code> → Borda: <code>#0A0608</code></p>
+        </div>
+      </div>
+      <div class="bg-card">
+        <div class="bg-preview bg-noturno"><span style="font-family:'Cinzel Decorative';color:rgba(216,179,93,.6);font-size:14px">Noturno Radial</span></div>
+        <div class="bg-body">
+          <b class="bg-label">Fundo Noturno</b>
+          <p style="margin-top:8px">Mesma lógica, com azul-noite no centro.</p>
+          <p>Centro: <code>#241452</code> → Borda: <code>#04060F</code></p>
+        </div>
+      </div>
+      <div class="bg-card">
+        <div class="bg-preview bg-ember"><span style="font-family:'Cinzel Decorative';color:rgba(216,179,93,.6);font-size:14px">Brasa Central</span></div>
+        <div class="bg-body">
+          <b class="bg-label">Glow de Fogo</b>
+          <p style="margin-top:8px">Terceira camada sobre o fundo vinho, com opacidade baixa.</p>
+          <p>Retângulo + gradiente radial centro: <code>#E8A13C</code> 20% opacidade → transparente</p>
+        </div>
+      </div>
+      <div class="bg-card">
+        <div class="bg-preview bg-scrim"><span style="font-family:'Cinzel Decorative';color:rgba(216,179,93,.6);font-size:14px">Veil sobre foto</span></div>
+        <div class="bg-body">
+          <b class="bg-label">Véu sobre Foto</b>
+          <p style="margin-top:8px">Gradiente linear de cima pra baixo, aplicado sobre a foto.</p>
+          <p>Topo: <code>#0A0608</code> 20% → Baixo: <code>#0A0608</code> 95%</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-family:'Cinzel Decorative';color:var(--ouro);font-size:16px;margin:32px 0 16px;font-weight:700">Passo a passo — Fundo Vinho no Canva</h3>
+    <div class="step-list">
+      <div class="step"><div class="step-n">1</div><p>Crie um retângulo do tamanho da arte. Preencha com <b>cor sólida</b> <code>#0A0608</code> (Preto Base).</p></div>
+      <div class="step"><div class="step-n">2</div><p>Duplique o retângulo. Selecione → <b>Efeitos → Gradiente</b>. Escolha <b>Radial</b>. Cor interna: <code>#3A0620</code>. Cor externa: transparente.</p></div>
+      <div class="step"><div class="step-n">3</div><p>Centralize o segundo retângulo sobre o primeiro. Ajuste o tamanho do fade: o vinho deve ocupar ~60% da área central.</p></div>
+      <div class="step"><div class="step-n">4</div><p><b>(Opcional — brasa)</b> Terceiro retângulo, gradiente radial com <code>#E8A13C</code> centro → transparente, opacidade: <b>15–22%</b>. Posicione ligeiramente abaixo do centro.</p></div>
+      <div class="step"><div class="step-n">5</div><p>Agrupe as três camadas. Agora é o fundo base de qualquer peça da Casa.</p></div>
+    </div>
+
+    <h3 style="font-family:'Cinzel Decorative';color:var(--ouro);font-size:16px;margin:32px 0 16px;font-weight:700">Tratamento de Foto — Duotone Vinho/Âmbar</h3>
+    <div class="duo-grid">
+      <div class="duo-card">
+        <div class="duo-bar">
+          <div class="duo-seg" style="background:#14051 6"></div>
+          <div class="duo-seg" style="background:#3a0620"></div>
+          <div class="duo-seg" style="background:#5f092b"></div>
+          <div class="duo-seg" style="background:#b05a20"></div>
+          <div class="duo-seg" style="background:#f0c87a"></div>
+        </div>
+        <div class="duo-label"><b>Vinho → Âmbar</b>Preto/vinho nas sombras, dourado nos brilhos</div>
+      </div>
+      <div class="duo-card">
+        <div class="duo-bar">
+          <div class="duo-seg" style="background:#07082 8"></div>
+          <div class="duo-seg" style="background:#0a1130"></div>
+          <div class="duo-seg" style="background:#a01857"></div>
+          <div class="duo-seg" style="background:#e83a8c"></div>
+          <div class="duo-seg" style="background:#f2ce96"></div>
+        </div>
+        <div class="duo-label"><b>Noite → Magenta → Âmbar</b>Versão noturno</div>
+      </div>
+      <div class="duo-card">
+        <div class="duo-bar" style="background:linear-gradient(90deg,#0a0608,#3a0620,#e8a13c)"></div>
+        <div class="duo-label"><b>No Canva:</b> foto + filtro "Duotone" ou mistura de cor com opacidade ~70%</div>
+      </div>
+    </div>
+    <div class="step-list">
+      <div class="step"><div class="step-n">1</div><p>Insira a foto. No menu lateral: <b>Editar imagem → Ajustes → Duotone</b>. Se não tiver: aplique filtro escuro, depois cubra com retângulo vinho em modo <b>Multiply</b>, 40–60% de opacidade.</p></div>
+      <div class="step"><div class="step-n">2</div><p>Adicione o véu: retângulo preto sobre a foto, modo <b>Multiply</b>, gradiente linear de cima (10%) para baixo (90%).</p></div>
+      <div class="step"><div class="step-n">3</div><p>Satura os altos: retângulo âmbar <code>#E8A13C</code>, modo <b>Screen</b> ou <b>Soft Light</b>, opacidade <b>15%</b>, só na região de brilhos.</p></div>
+    </div>
+  </section>
+
+  <!-- ════ GRAMÁTICA ════ -->
+  <section class="section">
+    <div class="sec-tag">04 &nbsp; Gramática Visual</div>
+    <h2 class="sec-h">As Regras da Casa</h2>
+    <p class="sec-sub">Seis elementos que se repetem em toda peça — sem eles, não é a Casa.</p>
+
+    <div class="grammar-grid">
+      <div class="gram-card">
+        <h4>✦ Moldura de Ouro</h4>
+        <div class="moldura-demo">
+          <span class="md-corner md-c1"></span><span class="md-corner md-c2"></span>
+          <span class="md-corner md-c3"></span><span class="md-corner md-c4"></span>
+          <span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-style:italic;color:#b8924a;font-size:13px">área de conteúdo</span>
+        </div>
+        <ul>
+          <li>Retângulo sem preenchimento, borda <code>#D8B35D</code>, 1.5px</li>
+          <li>Recuado ~40–54px das bordas da arte</li>
+          <li>Cantoneiras: quadrados em L nos 4 cantos, 20×20px, mesma cor</li>
+          <li>Aparece em TODAS as peças sem exceção</li>
+        </ul>
+      </div>
+      <div class="gram-card">
+        <h4>✦ Divisória com Diamante</h4>
+        <div class="div-demo"><i></i><b></b><i></i></div>
+        <ul>
+          <li>Linha horizontal + quadrado central rotacionado 45°</li>
+          <li>Linha: gradiente transparente→<code>#D8B35D</code>→transparente</li>
+          <li>Losango: <code>#D8B35D</code> sólido, 8–10px</li>
+          <li>Separa seções dentro de qualquer peça</li>
+        </ul>
+      </div>
+      <div class="gram-card">
+        <h4>✦ Eyebrow</h4>
+        <div class="sp-eb-eye" style="margin:14px 0">Encontro Ritual</div>
+        <ul>
+          <li>EB Garamond SemiBold, MAIÚSCULAS</li>
+          <li>Espaçamento de letras: <b>muito amplo</b> (0.4–0.5em)</li>
+          <li>Cor: Ouro Suave <code>#B8924A</code></li>
+          <li>Sempre acima do título principal</li>
+        </ul>
+      </div>
+      <div class="gram-card">
+        <h4>✦ Centro que Irradia</h4>
+        <ul>
+          <li>O sigilo, o fogo ou o título principal ficam sempre no centro geométrico</li>
+          <li>Todo o layout emana desse ponto</li>
+          <li>Nunca justificar texto à esquerda em peças de feed</li>
+          <li>Em flyers: 2 colunas de info simétricas</li>
+        </ul>
+      </div>
+      <div class="gram-card">
+        <h4>✦ Sigilo no Topo</h4>
+        <ul>
+          <li>O sigilo da Casa aparece centralizado no topo de toda peça</li>
+          <li>Tamanho: 60–90px em posts, 72–100px em flyers</li>
+          <li>Cor: sempre Ouro <code>#D8B35D</code></li>
+          <li>Com drop-shadow suave: 0px 0px 20px <code>#D8B35D</code> 35%</li>
+          <li>Nunca alterar o desenho do sigilo</li>
+        </ul>
+      </div>
+      <div class="gram-card">
+        <h4>✦ Texto Espelhado em Arco</h4>
+        <ul>
+          <li>Nos emblemas circulares: nome em arco superior, tagline em arco inferior</li>
+          <li>No Canva: inserir texto → curvar com ferramenta de texto em arco</li>
+          <li>Fonte: Cinzel Decorative Bold</li>
+          <li>Cor: Ouro Brilhante <code>#F0C45A</code></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ HIERARQUIA ════ -->
+  <section class="section">
+    <div class="sec-tag">05 &nbsp; Hierarquia</div>
+    <h2 class="sec-h">Como os Elementos se Empilham</h2>
+    <p class="sec-sub">A anatomia de um post da Casa — da moldura ao rodapé.</p>
+    <div class="hier-demo">
+      <div class="hd-eye">Encontro Ritual</div>
+      <div class="hd-title">Roda de Fogo</div>
+      <div class="hd-sub">uma noite de fogo, tambor e transe</div>
+      <div class="hd-div"><i></i><b></b><i></i></div>
+      <div class="hd-info">Sexta · 20h</div>
+      <div class="hd-body">confirme sua presença</div>
+      <div class="hd-lbl">@casaventreforte</div>
+    </div>
+    <div class="arrow-labels" style="margin-top:20px">
+      <span class="al-tag">Eyebrow</span><span class="al-desc">EB Garamond SemiBold, maiúsculo, #B8924A, espaçamento amplo</span>
+      <span class="al-tag">Título</span><span class="al-desc">Cinzel Decorative Black, #F0C45A, maior elemento da peça</span>
+      <span class="al-tag">Subtítulo</span><span class="al-desc">EB Garamond Italic, #E7DAC0, 55–60% do tamanho do título</span>
+      <span class="al-tag">Divisória</span><span class="al-desc">linha + losango #D8B35D — sempre entre blocos diferentes</span>
+      <span class="al-tag">Info</span><span class="al-desc">Cinzel Decorative Bold, #D8B35D, dados práticos</span>
+      <span class="al-tag">Subnota</span><span class="al-desc">EB Garamond Italic, #CBB9A8, chamadas sutis</span>
+      <span class="al-tag">Rodapé</span><span class="al-desc">Cinzel Decorative Bold, #D8B35D, @ e assinatura</span>
+    </div>
+  </section>
+
+  <!-- ════ DO / DON'T ════ -->
+  <section class="section">
+    <div class="sec-tag">06 &nbsp; Regras de Uso</div>
+    <h2 class="sec-h">O que Faz e o que Quebra a Identidade</h2>
+    <div class="dd-grid">
+      <div class="dd-card dd-do">
+        <h4>✓ Fazer sempre</h4>
+        <ul>
+          <li>Usar SOMENTE Cinzel Decorative + EB Garamond</li>
+          <li>Manter a moldura de ouro em toda peça</li>
+          <li>Sigilo sempre no topo, centralizado</li>
+          <li>Fundo escuro — nunca fundo branco</li>
+          <li>Fotos com duotone vinho/âmbar aplicado</li>
+          <li>Composição centralizada, radiante de dentro pra fora</li>
+          <li>Eyebrow sempre em maiúsculo com espaçamento amplo</li>
+          <li>Divisória com losango entre blocos de info</li>
+          <li>Ouro para elementos sagrados (sigilo, moldura, título)</li>
+          <li>Creme para o corpo do texto</li>
+          <li>Manter dois toques de cor máximo por peça</li>
+        </ul>
+      </div>
+      <div class="dd-card dd-dont">
+        <h4>✗ Nunca fazer</h4>
+        <ul>
+          <li>Usar outras fontes (nem Arial, nem Playfair, nem qualquer outra)</li>
+          <li>Fundo branco, cinza ou colorido vibrante</li>
+          <li>Texto colorido em tons quentes/néon — só ouro e creme</li>
+          <li>Foto sem tratamento de cor (sem duotone)</li>
+          <li>Alterar o desenho do sigilo</li>
+          <li>Mais de 2 tamanhos de título por peça</li>
+          <li>Centralizar e justificar na mesma peça</li>
+          <li>Símbolos externos ao vocabulário da Casa (chakras, flores de vida, OM)</li>
+          <li>Sombra de texto muito pesada — sutil ou nenhuma</li>
+          <li>Bordas arredondadas (border-radius) — sempre cantos retos</li>
+          <li>Misturar pele vinho e pele noturna na mesma peça</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ CANVA TIPS ════ -->
+  <section class="section">
+    <div class="sec-tag">07 &nbsp; Dicas Canva</div>
+    <h2 class="sec-h">Atalhos Práticos no Canva</h2>
+    <div class="tip-grid">
+      <div class="tip-card">
+        <h4>Encontrar as fontes</h4>
+        <ul>
+          <li>Buscar <code>Cinzel Decorative</code> — aparecem 2 pesos</li>
+          <li>Buscar <code>EB Garamond</code> — escolha Regular, Italic ou Bold</li>
+          <li>Se não aparecer, clicar "Ver mais" no seletor de fonte</li>
+          <li>Salvar nas fontes favoritas para acesso rápido</li>
+        </ul>
+      </div>
+      <div class="tip-card">
+        <h4>Inserir cor hexadecimal</h4>
+        <ul>
+          <li>Clicar no quadrado de cor</li>
+          <li>No campo "#" digitar o código sem o #</li>
+          <li>Ex.: digitar <code>D8B35D</code> para ouro</li>
+          <li>Salvar cores no "Paleta da marca" para reusar</li>
+        </ul>
+      </div>
+      <div class="tip-card">
+        <h4>Criar a moldura</h4>
+        <ul>
+          <li>Retângulo sem preenchimento, borda 2px <code>#D8B35D</code></li>
+          <li>Recuar ~40–54px das margens</li>
+          <li>Cantoneiras: 4 linhas em L, agrupar e posicionar nos cantos</li>
+          <li>Agrupar tudo e travar no lugar</li>
+        </ul>
+      </div>
+      <div class="tip-card">
+        <h4>Espaçamento de letras amplo</h4>
+        <ul>
+          <li>Selecionar o texto eyebrow</li>
+          <li>Estilo de texto → <b>Espaçamento</b> → Letra: <code>+200 a +400</code></li>
+          <li>Ou no menu superior: ícone "AA" → Espaçamento entre letras</li>
+          <li>Todas as maiúsculas: Texto → "TT" → Maiúsculas</li>
+        </ul>
+      </div>
+      <div class="tip-card">
+        <h4>Duotone rápido na foto</h4>
+        <ul>
+          <li>Foto selecionada → <b>Editar imagem</b></li>
+          <li>Procurar <b>Duotone</b> nos filtros</li>
+          <li>Alternativa: foto em preto-e-branco (Filtros → P&B)</li>
+          <li>Depois: retângulo vinho <code>#3A0620</code> modo <b>Multiply</b>, 50%</li>
+        </ul>
+      </div>
+      <div class="tip-card">
+        <h4>Gradiente radial de fundo</h4>
+        <ul>
+          <li>Retângulo → Cor → <b>Gradiente</b> → Radial</li>
+          <li>Cor 1 (centro): <code>#3A0620</code></li>
+          <li>Cor 2 (borda): <code>#0A0608</code></li>
+          <li>Ajustar a posição do centro para ~40% do alto</li>
+        </ul>
+      </div>
+      <div class="tip-card">
+        <h4>Salvar como template Canva</h4>
+        <ul>
+          <li>Criar a arte base com fundo + moldura + sigilo</li>
+          <li>Salvar como <b>Pasta da Marca</b> no Canva</li>
+          <li>Duplicar (Ctrl+D) para cada novo post</li>
+          <li>Manter o template master trancado</li>
+        </ul>
+      </div>
+      <div class="tip-card">
+        <h4>Tamanhos de arte</h4>
+        <ul>
+          <li>Post de Feed: <code>1080 × 1080 px</code></li>
+          <li>Stories / Reels: <code>1080 × 1920 px</code></li>
+          <li>Flyer A4 digital: <code>1240 × 1754 px</code></li>
+          <li>Flyer A4 impresso: <code>2480 × 3508 px</code> (300dpi)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ QUICK REFERENCE ════ -->
+  <section class="section">
+    <div class="sec-tag">08 &nbsp; Referência Rápida</div>
+    <h2 class="sec-h">Cola — Tudo em Uma Folha</h2>
+    <div style="background:rgba(95,9,43,.1);border:1px solid rgba(216,179,93,.3);border-radius:4px;padding:28px 32px;display:grid;grid-template-columns:1fr 1fr;gap:24px 40px">
+      <div>
+        <div class="sp-eb-lbl" style="margin-bottom:10px">Fontes</div>
+        <p style="font-size:14px;color:#cbb9a8;line-height:1.7">
+          Display: <b style="color:var(--creme)">Cinzel Decorative Bold/Black</b><br>
+          Corpo: <b style="color:var(--creme)">EB Garamond Regular/Italic/SemiBold</b>
+        </p>
+      </div>
+      <div>
+        <div class="sp-eb-lbl" style="margin-bottom:10px">Fundos</div>
+        <p style="font-size:14px;color:#cbb9a8;line-height:1.7">
+          Vinho: <b style="color:var(--ouro)">#0A0608</b> + radial <b style="color:var(--ouro)">#3A0620</b><br>
+          Noturno: <b style="color:var(--ouro)">#04060F</b> + radial <b style="color:var(--ouro)">#241452</b>
+        </p>
+      </div>
+      <div>
+        <div class="sp-eb-lbl" style="margin-bottom:10px">Ouro (sempre)</div>
+        <p style="font-size:14px;color:#cbb9a8;line-height:1.7">
+          Moldura/Sigilo: <b style="color:var(--ouro)">#D8B35D</b><br>
+          Títulos: <b style="color:var(--ouro-2)">#F0C45A</b><br>
+          Labels: <b style="color:var(--ouro-soft)">#B8924A</b>
+        </p>
+      </div>
+      <div>
+        <div class="sp-eb-lbl" style="margin-bottom:10px">Texto (sempre)</div>
+        <p style="font-size:14px;color:#cbb9a8;line-height:1.7">
+          Principal: <b style="color:var(--creme)">#F3EAD9</b><br>
+          Secundário: <b style="color:var(--creme-2)">#E7DAC0</b><br>
+          Magenta (noturno): <b style="color:var(--magenta)">#E83A8C</b>
+        </p>
+      </div>
+      <div>
+        <div class="sp-eb-lbl" style="margin-bottom:10px">Regra de Ouro</div>
+        <p style="font-size:14px;color:#cbb9a8;line-height:1.7">
+          Moldura sempre presente<br>
+          Sigilo sempre no topo<br>
+          Composição sempre centralizada<br>
+          Foto sempre com duotone
+        </p>
+      </div>
+      <div>
+        <div class="sp-eb-lbl" style="margin-bottom:10px">Nunca</div>
+        <p style="font-size:14px;color:#cbb9a8;line-height:1.7">
+          Fundo claro<br>
+          Outras fontes<br>
+          Foto sem tratamento<br>
+          Alterar o sigilo
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="doc-footer">
+    <b>Casa Ventre Forte</b><br>
+    Escola de Bruxaria · São Paulo<br>
+    Este manual é um documento vivo — qualquer dúvida, consulte os templates originais.
+  </div>
+
+</div><!-- /page -->
+</body>
+</html>
