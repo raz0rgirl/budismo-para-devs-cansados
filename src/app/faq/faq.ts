@@ -28,15 +28,6 @@ export class Faq {
       question: '👉 Posso compartilhar o material?',
       answer: 'O material em si é protegido por direitos autorais, mas você pode compartilhar os ensinamentos aprendidos com outras pessoas. Plante estas boas sementes por aí!',
       open: false
-    },
-    {
-      question: '👉 Como faço para me inscrever na lista de espera?',
-      answer: 'Basta preencher o formulário alado com seu nome e e-mail ou whatsapp. Assim que o ebook estiver disponível, você receberá uma notificação com o link para adquiri-lo.',
-      open: false
-    },
-    {
-      question: '👉 Existe alguma maneira de adquirir o ebook gratuitamente?',
-      answer: 'Sim! Para aqueles que possuem assinatura no Kindle unlimited o livro estará disponível gratuitamente.',
     }
   ];
 
